@@ -1,0 +1,16 @@
+CREATE TABLE race (
+        id Integer,
+        race_created Date,
+        race_driven DateTime,
+        track_id Integer,
+        challenger Integer,
+        opponent Integer,
+        money Integer,
+        fuel_consumption NUMERIC(7,4) NOT NULL,
+        winner Integer,
+        status VARCHAR(8),
+        forecast_sunny Integer,
+        forecat_rainy Integer,
+        forecast_thundery Integer,
+        forecast_snowy Integer,
+        weather VARCHAR(8));
