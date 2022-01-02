@@ -67,7 +67,7 @@ count = 0
 # Strips the newline character
 for line in Lines:
     count += 1
-    m = re.search(r'(\d+);([\w.]+);([\w.: -]+);(\d+);(\d+);(\d+);(\d+);([\d.]+);(\d+);(\w+);"a:4:{s:5:""sunny"";i:(\d+);s:5:""rainy"";i:(\d+);s:8:""thundery"";i:(\d+);s:5:""snowy"";i:(\d+);(\w+)?', line.strip())
+    m = re.search(r'(\d+);([\w.]+);([\w.: -]+);(\d+);(\d+);(\d+);(\d+);([\d.]+);(\d+);(\w+);"a:4:{s:5:""sunny"";i:(\d+);s:5:""rainy"";i:(\d+);s:8:""thundery"";i:(\d+);s:5:""snowy"";i:(\d+);}";(\w+)?', line.strip())
     if not m:
         print("Line{}: {}".format(count, line.strip()))
         print("Found corrupt Data")
